@@ -152,3 +152,47 @@
 }
 
 /* End of Services */
+.numbers {
+    background-image: linear-gradient(rgba(0, 120, 255,0.7)0% 100%) ,url(./../images/counters-bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.inner-numbers {
+    color: #CDE1F8;
+}
+
+.inner-numbers .num i {
+    position: relative;
+    /*border: #0078FF 8px solid;*/
+    box-shadow: #CDE1F8 0px 0px 0px 10px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.inner-numbers .num i::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* Start of Numbers */
+/* End of Numbers */
