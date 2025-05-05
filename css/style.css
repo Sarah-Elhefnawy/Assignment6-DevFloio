@@ -1,6 +1,35 @@
 /* Start of Navbar */
 .navbar {
-    background-color: rgba(4, 4, 4,0.5);
+    background-color: rgba(4, 4, 4,0.92);
+}
+
+.navbar ul li a {
+    font-weight: 600;
+    position: relative;
+    margin: 0 .3125rem;
+}
+
+.navbar ul li a::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    right: 100%;
+    bottom: 0;
+    background-color: white;
+    height: .125rem;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover::after {
+    right: 10px;
+}
+
+.navbar ul li ul li a {
+    color: black;
 }
 
 .dropdown-submenu {
@@ -10,8 +39,8 @@
 .dropdown-submenu .dropdown-menu {
     top: 0;
     right: 100%; 
-    margin-top: -1px;
-    margin-left: .1rem;
+    /* margin-top: -1px; */
+    /* margin-left: .1rem; */
 }
 
 .dropdown-submenu:hover .dropdown-menu {
@@ -21,7 +50,7 @@
 @media (max-width: 992px) {
     .dropdown-submenu .dropdown-menu {
         position: static;
-        margin-left: 1rem;
+        /* margin-left: 1rem; */
     }
 }
 /* End of Navbar */
@@ -31,5 +60,27 @@
     background-image: linear-gradient(rgba(0,0,0,0.5)0% 100%), url(./../images/hero-bg.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h1 {
+    font-size: 3rem;
+    line-height: 3.8rem;
 }
 /* End of Header */
+
+/* Start of About */
+.about figure {
+    width: 150px;
+}
+
+.about h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 75%;
+    bottom: -8px;
+    background-color: #0078FF;
+    height: 3px;
+}
+/* End of About */
