@@ -1,6 +1,6 @@
 /* Start of Navbar */
 .navbar {
-    background-color: rgba(4, 4, 4,0.92);
+    background-color: rgba(4, 4, 4, 0.92);
 }
 
 .navbar ul li a {
@@ -38,7 +38,7 @@
 
 .dropdown-submenu .dropdown-menu {
     top: 0;
-    right: 100%; 
+    right: 100%;
     /* margin-top: -1px; */
     /* margin-left: .1rem; */
 }
@@ -53,11 +53,12 @@
         /* margin-left: 1rem; */
     }
 }
+
 /* End of Navbar */
 
 /* Start of Header */
 .header {
-    background-image: linear-gradient(rgba(0,0,0,0.5)0% 100%), url(./../images/hero-bg.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5)0% 100%), url(./../images/hero-bg.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -67,6 +68,7 @@
     font-size: 3rem;
     line-height: 3.8rem;
 }
+
 /* End of Header */
 
 /* Start of About */
@@ -83,4 +85,70 @@
     background-color: #0078FF;
     height: 3px;
 }
+
 /* End of About */
+
+/* Start of Services */
+.services h3 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+}
+
+.services p.highlight {
+    position: relative;
+}
+
+.services p.highlight::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    right: 0;
+    height: 5px;
+    width: 10%;
+    background-color: #0078FF;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.services .inner-services i {
+    position: relative;
+    /*border: #0078FF 8px solid;
+    */box-shadow: #0078ff 0px 0px 0px 10px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.services .inner-services i::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+.services .inner-services:hover i {
+    /* border: rgba(193, 210, 229, 0.01) 8px solid; */
+    box-shadow: rgba(129, 186, 251, 0.583) 0px 0px 0px 10px;
+    background-color: #0078FF;
+}
+
+/* End of Services */
