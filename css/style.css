@@ -267,4 +267,24 @@ h3 {
 .testimonail #carouselExampleSlidesOnly button.active {
     background-color: white;
 }
+
 /* End of Testimonail */
+
+/* Start of Blog */
+.blog .card .card-footer img {
+    width: 12%;
+}
+
+.blog .card .card-footer a span {
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.blog .card .card-footer a span:hover {
+    color: #0078FF;
+}
+
+/* End of Blog */
