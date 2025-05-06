@@ -78,7 +78,6 @@ p.highlight::after {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5)0% 100%), url(./../images/hero-bg.jpg);
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .header h1 {
@@ -152,7 +151,6 @@ h3 {
 /* End of Services */
 .numbers {
     background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/counters-bg.jpg);
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     padding: 120px 0;
@@ -242,3 +240,31 @@ h3 {
 }
 
 /* End of Portfolio */
+
+/* Start of Testimonail */
+.testimonail {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonail .testimonial-p {
+    max-width: 35rem;
+}
+
+.testimonail #carouselExampleSlidesOnly button {
+    width: 10px;
+    height: 12px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.678);
+    border: none;
+}
+
+.testimonail #carouselExampleSlidesOnly button.active {
+    background-color: white;
+}
+/* End of Testimonail */
