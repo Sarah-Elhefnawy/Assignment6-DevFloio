@@ -1,3 +1,18 @@
+:root {
+    --primary-color: #0078FF;
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 6rem;
+    bottom: -8px;
+    background-color: var(--primary-color);
+    height: 2.5px;
+}
+
 p.highlight {
     position: relative;
 }
@@ -10,7 +25,7 @@ p.highlight::after {
     right: 0;
     height: 5px;
     width: 3rem;
-    background-color: #0078FF;
+    background-color: var(--primary-color);
     transform: translate(-50%);
     -webkit-transform: translate(-50%);
     -moz-transform: translate(-50%);
@@ -92,16 +107,6 @@ p.highlight::after {
     width: 150px;
 }
 
-.about h2::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 75%;
-    bottom: -8px;
-    background-color: #0078FF;
-    height: 3px;
-}
-
 /* End of About */
 
 /* Start of Services */
@@ -113,9 +118,7 @@ h3 {
 
 .services .inner-services i {
     position: relative;
-    /*border: #0078FF 8px solid;
-    */
-    box-shadow: #0078ff 0px 0px 0px 10px;
+    box-shadow: var(--primary-color) 0px 0px 0px 10px;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -143,9 +146,8 @@ h3 {
 }
 
 .services .inner-services:hover i {
-    /* border: rgba(193, 210, 229, 0.01) 8px solid; */
     box-shadow: rgba(129, 186, 251, 0.583) 0px 0px 0px 10px;
-    background-color: #0078FF;
+    background-color: var(--primary-color);
 }
 
 /* End of Services */
@@ -213,7 +215,7 @@ h3 {
 
 .portfolio .portfolio-btn i {
     position: relative;
-    box-shadow: #0078FF 0px 0px 0px 2px;
+    box-shadow: var(--primary-color) 0px 0px 0px 2px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -284,7 +286,57 @@ h3 {
 }
 
 .blog .card .card-footer a span:hover {
-    color: #0078FF;
+    color: var(--primary-color);
 }
 
 /* End of Blog */
+
+/* Start of Contact */
+.contact {
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+}
+
+.contact .contact-box .contact-styled-icons i {
+    position: relative;
+    box-shadow: var(--primary-color) 0px 0px 0px 3px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.contact .contact-box .contact-styled-icons i::before {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
+.contact .contact-box i:hover {
+    box-shadow: rgba(129, 186, 251, 0.583) 0px 0px 0px 10px;
+    background-color: var(--primary-color);
+}
+
+/* End of Contact */
+
+/* Start of Footer */
+footer {
+    background-color: #0062D3;
+}
+/* End of Footer */
