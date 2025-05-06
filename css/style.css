@@ -1,3 +1,23 @@
+p.highlight {
+    position: relative;
+}
+
+p.highlight::after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    right: 0;
+    height: 5px;
+    width: 3rem;
+    background-color: #0078FF;
+    transform: translate(-50%);
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+}
+
 /* Start of Navbar */
 .navbar {
     background-color: rgba(4, 4, 4, 0.92);
@@ -9,7 +29,7 @@
     margin: 0 .3125rem;
 }
 
-.navbar ul li a::after {
+.navbar ul li a:not(a.dropdown-item)::after {
     content: "";
     position: absolute;
     left: 10px;
@@ -32,6 +52,7 @@
     color: black;
 }
 
+/* Custom dropdown styles */
 .dropdown-submenu {
     position: relative;
 }
@@ -39,18 +60,14 @@
 .dropdown-submenu .dropdown-menu {
     top: 0;
     right: 100%;
-    /* margin-top: -1px; */
-    /* margin-left: .1rem; */
+    margin-top: -1px;
+    margin-left: .1rem;
 }
 
-.dropdown-submenu:hover .dropdown-menu {
-    display: block;
-}
-
-@media (max-width: 992px) {
-    .dropdown-submenu .dropdown-menu {
-        position: static;
-        /* margin-left: 1rem; */
+/* Show nested dropdown on hover */
+@media (min-width: 992px) {
+    .dropdown-submenu:hover>.dropdown-menu {
+        display: block;
     }
 }
 
@@ -89,36 +106,17 @@
 /* End of About */
 
 /* Start of Services */
-.services h3 {
+h3 {
     font-size: 48px;
     font-weight: 700;
     line-height: 57.6px;
 }
 
-.services p.highlight {
-    position: relative;
-}
-
-.services p.highlight::after {
-    content: "";
-    position: absolute;
-    top: 150%;
-    left: 50%;
-    right: 0;
-    height: 5px;
-    width: 10%;
-    background-color: #0078FF;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
-}
-
 .services .inner-services i {
     position: relative;
     /*border: #0078FF 8px solid;
-    */box-shadow: #0078ff 0px 0px 0px 10px;
+    */
+    box-shadow: #0078ff 0px 0px 0px 10px;
     border-radius: 50%;
     width: 120px;
     height: 120px;
@@ -153,7 +151,7 @@
 
 /* End of Services */
 .numbers {
-    background-image: linear-gradient(rgba(0, 120, 255,0.7)0% 100%) ,url(./../images/counters-bg.jpg);
+    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/counters-bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -194,5 +192,53 @@
     -o-transform: translateY(-50%);
 }
 
-/* Start of Numbers */
-/* End of Numbers */
+/* Start of Portfolio */
+.portfolio .card-body p {
+    font-size: 13px;
+}
+
+.portfolio .portfolio-img img {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.portfolio .card:hover .portfolio-img img {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.portfolio .portfolio-btn i {
+    position: relative;
+    box-shadow: #0078FF 0px 0px 0px 2px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+
+.portfolio .portfolio-btn i::before {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+/* End of Portfolio */
