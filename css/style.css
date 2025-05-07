@@ -44,10 +44,11 @@ p.highlight::after {
     margin: 0 .3125rem;
 }
 
-.navbar ul li a:not(a.dropdown-item)::after {
+.navbar ul li a::after {
     content: "";
     position: absolute;
-    left: 10px;
+    left: 5px;
+    visibility: hidden;
     right: 100%;
     bottom: 0;
     background-color: white;
@@ -61,29 +62,42 @@ p.highlight::after {
 
 .navbar ul li a:hover::after {
     right: 10px;
+    visibility: visible;
 }
 
-.navbar ul li ul li a {
-    color: black;
+.navbar li.dropdown ul.nav-drop-active {
+    display: block;
+    position: absolute;
+    left: 13px;
+    top: 300%;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.3s all ease;
+    -webkit-transition: 0.3s all ease;
+    -moz-transition: 0.3s all ease;
+    -ms-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
 }
 
-/* Custom dropdown styles */
-.dropdown-submenu {
-    position: relative;
+.navbar li.dropdown:hover>ul.nav-drop-active {
+    opacity: 1;
+    top: 120%;
+    visibility: visible;
 }
 
-.dropdown-submenu .dropdown-menu {
-    top: 0;
-    right: 100%;
-    margin-top: -1px;
-    margin-left: .1rem;
-}
-
-/* Show nested dropdown on hover */
-@media (min-width: 992px) {
-    .dropdown-submenu:hover>.dropdown-menu {
-        display: block;
-    }
+.navbar li.dropdown ul.nav-drop-active li.nav-a-active a:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    transition: color 0.6s ease;
+    -webkit-transition: color 0.6s ease;
+    -moz-transition: color 0.6s ease;
+    -ms-transition: color 0.6s ease;
+    -o-transition: color 0.6s ease;
 }
 
 /* End of Navbar */
@@ -98,6 +112,11 @@ p.highlight::after {
 .header h1 {
     font-size: 3rem;
     line-height: 3.8rem;
+}
+
+.header span.typed-cursor {
+    font-size: 30px;
+    font-weight: 800;
 }
 
 /* End of Header */
@@ -299,6 +318,21 @@ h3 {
     box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
+.contact .contact-btn {
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3 ease-in-out;
+    -moz-transition: all 0.3 ease-in-out;
+    -ms-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+    border: transparent 5px solid;
+    background-color: var(--primary-color);
+}
+
+.contact .contact-btn:hover {
+    background-color: rgba(0, 120, 255, 0.7);
+    border: #CDE1F8 5px solid;
+}
+
 .contact .contact-box .contact-styled-icons i {
     position: relative;
     box-shadow: var(--primary-color) 0px 0px 0px 3px;
@@ -319,13 +353,13 @@ h3 {
 
 .contact .contact-box .contact-styled-icons i::before {
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%);
-    -webkit-transform: translate(-50%);
-    -moz-transform: translate(-50%);
-    -ms-transform: translate(-50%);
-    -o-transform: translate(-50%);
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
 }
 
 .contact .contact-box i:hover {
@@ -339,4 +373,5 @@ h3 {
 footer {
     background-color: #0062D3;
 }
+
 /* End of Footer */

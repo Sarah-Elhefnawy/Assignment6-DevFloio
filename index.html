@@ -38,23 +38,16 @@
                     <li class="nav-item ps-3">
                         <a class="nav-link active" href="#blog">Blog</a>
                     </li>
-                    <li class="nav-item ps-3 dropdown">
-                        <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Menu
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white" href="#" role="button" aria-expanded="false">
+                            drop down
+                            <i class="fa-solid fa-caret-down"></i>
                         </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li class="dropdown-submenu">
-                                <a class="dropdown-item dropdown-toggle" href="#" role="button">
-                                    Nested Dropdown
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Nested Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another nested action</a></li>
-                                </ul>
-                            </li>
+                        <ul class="dropdown-menu nav-drop-active rounded-0">
+                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 1</a></li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 2</a></li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 3</a></li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 4</a></li>
                         </ul>
                     </li>
                     <li class="nav-item ps-3">
@@ -663,16 +656,17 @@
                         <div>
                             <h2 class="fs-2 fw-medium position-relative">Send Message Us</h2>
                             <form class="mt-5">
-                                <input type="name" class="form-control form-control-lg rounded-0 mb-3" id="exampleFormControlInput1"
-                                    placeholder="Your Name">
-                                <input type="email" class="form-control form-control-lg rounded-0 mb-3" id="exampleFormControlInput1"
-                                    placeholder="Your Email">
-                                <input type="text" class="form-control form-control-lg rounded-0 mb-3" id="exampleFormControlInput1"
-                                    placeholder="Subject">
-                                <textarea class="form-control form-control-lg rounded-0 mb-3" id="exampleFormControlTextarea1" rows="3"
-                                    placeholder="Message"></textarea>
+                                <input type="name" class="form-control form-control-lg rounded-0 mb-3"
+                                    id="exampleFormControlInput1" placeholder="Your Name">
+                                <input type="email" class="form-control form-control-lg rounded-0 mb-3"
+                                    id="exampleFormControlInput1" placeholder="Your Email">
+                                <input type="text" class="form-control form-control-lg rounded-0 mb-3"
+                                    id="exampleFormControlInput1" placeholder="Subject">
+                                <textarea class="form-control form-control-lg rounded-0 mb-3"
+                                    id="exampleFormControlTextarea1" rows="3" placeholder="Message"></textarea>
                                 <div class="col-6 mx-auto">
-                                    <button type="button" class="btn btn-primary btn-lg rounded-5 px-4 my-4 mx-auto">Send
+                                    <button type="button"
+                                        class="contact-btn btn text-white btn-lg rounded-5 px-4 my-4 mx-auto">Send
                                         Message</button>
                                 </div>
                             </form>
@@ -681,7 +675,8 @@
                     <div class="col-sm-12 col-md-6">
                         <div>
                             <h2 class="fs-2 fw-medium position-relative">Get in Touch</h2>
-                            <p class="text-body-secondary pt-4 pb-2 fs-5 fw-lighter">Lorem ipsum dolor sit amet consectetur
+                            <p class="text-body-secondary pt-4 pb-2 fs-5 fw-lighter">Lorem ipsum dolor sit amet
+                                consectetur
                                 adipisicing elit. Facilis dolorum dolorem soluta
                                 quidem expedita aperiam aliquid at. Totam magni ipsum suscipit amet? Autem nemo esse
                                 laboriosam ratione nobis mollitia inventore?</p>
@@ -699,7 +694,8 @@
                                     <span>contact@example.com</span>
                                 </li>
                             </ul>
-                            <ul class="contact-styled-icons list-unstyled mt-4 d-flex flex-row">
+                            <ul
+                                class="contact-styled-icons list-unstyled mt-4 d-flex flex-row justify-content-start align-items-center">
                                 <li class="pe-3"><i class="fa-brands fa-facebook fs-3"></i></li>
                                 <li class="pe-3"><i class="fa-brands fa-instagram fs-3"></i></li>
                                 <li class="pe-3"><i class="fa-brands fa-twitter fs-3"></i></li>
@@ -714,59 +710,17 @@
     <!-- End of Contact -->
 
     <!-- Start of Footer -->
-     <footer class="py-4 text-center text-white">
+    <footer class="py-4 text-center text-white">
         <div class="lh-1">
             <p class="">© Copyright <span class="fw-bold">DevFolio</span>. All Rights Reserved</p>
             <span>Designed by BootstrapMade</span>
         </div>
-     </footer>
+    </footer>
     <!-- End of Footer -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        // Initialize Bootstrap dropdowns
-        var dropdownElementList = [].slice.call(document.querySelectorAll('.dropdown-toggle'))
-        var dropdownList = dropdownElementList.map(function (dropdownToggleEl) {
-            return new bootstrap.Dropdown(dropdownToggleEl)
-        })
-
-        // Handle nested dropdowns
-        document.querySelectorAll('.dropdown-submenu a.dropdown-toggle').forEach(function (element) {
-            element.addEventListener('click', function (e) {
-                e.preventDefault();
-                e.stopPropagation();
-                var submenu = this.nextElementSibling;
-                submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
-
-                // Close other open submenus
-                document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
-                    if (menu !== submenu) {
-                        menu.style.display = 'none';
-                    }
-                });
-            });
-        });
-
-        // Close all dropdowns when clicking outside
-        document.addEventListener('click', function () {
-            document.querySelectorAll('.dropdown-submenu .dropdown-menu').forEach(function (menu) {
-                menu.style.display = 'none';
-            });
-        });
-
-
-
-        var typed = new Typed('.typed', {
-            strings: ["Photographer", "Developer"],
-            typeSpeed: 50,
-            backSpeed: 60,
-            backDelay: 500,
-            startDelay: 1000,
-            loop: true,
-            cursorChar: '|',
-        });
-    </script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
