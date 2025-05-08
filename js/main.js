@@ -1,8 +1,8 @@
 var typed = new Typed('.typed', {
-    strings: ["Photographer", "Developer", "Freelancer", "Photographer"],
+    strings: ["Designer", "Developer", "Freelancer", "Photographer"],
     typeSpeed: 50,
     backSpeed: 60,
-    backDelay: 500,
-    startDelay: 1000,
+    backDelay: 1600,
+    startDelay: 300,
     loop: true,
 });

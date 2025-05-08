@@ -16,16 +16,6 @@ h2::after {
     height: .1563rem;
 }
 
-h3 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 3.6rem;
-}
-
-p.highlight {
-    position: relative;
-}
-
 p.highlight::after {
     content: "";
     position: absolute;
@@ -47,16 +37,10 @@ p.highlight::after {
     background-color: rgba(4, 4, 4, 0.92);
 }
 
-.navbar ul li a {
-    font-weight: 600;
-    position: relative;
-    margin: 0 .3125rem;
-}
-
-.navbar ul li a::after {
+.navbar ul.navbar-nav li.nav-item::after {
     content: "";
     position: absolute;
-    left: .3125rem;
+    left: 1.5625rem;
     visibility: hidden;
     right: 100%;
     bottom: 0;
@@ -69,23 +53,15 @@ p.highlight::after {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.navbar ul li a:hover::after {
+.navbar ul.navbar-nav li.nav-item:hover::after {
     right: .625rem;
     visibility: visible;
 }
 
 .navbar li.dropdown ul.nav-drop-active {
-    display: block;
-    position: absolute;
-    left: .8125rem;
+    left: 1.5rem;
     top: 300%;
-    padding: .625rem 0;
-    z-index: 99;
     opacity: 0;
-    visibility: hidden;
-    background: #fff;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
     transition: 0.3s all ease;
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
@@ -96,7 +72,6 @@ p.highlight::after {
 .navbar li.dropdown:hover>ul.nav-drop-active {
     opacity: 1;
     top: 120%;
-    visibility: visible;
 }
 
 .navbar li.dropdown ul.nav-drop-active li.nav-a-active a:hover {
@@ -131,24 +106,17 @@ p.highlight::after {
 /* End of Header */
 
 /* Start of About */
-.about figure {
+.about figure img {
     width: 9.375rem;
 }
 
 /* End of About */
 
 /* Start of Services */
-
 .services .inner-services i {
-    position: relative;
     box-shadow: var(--primary-color) 0px 0px 0px .625rem;
-    border-radius: 50%;
     width: 100px;
     height: 100px;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -183,15 +151,9 @@ p.highlight::after {
 }
 
 .numbers .num i {
-    position: relative;
     box-shadow: #CDE1F8 0 0 0 .625rem;
-    border-radius: 50%;
     width: 3.75rem;
     height: 3.75rem;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -212,10 +174,6 @@ p.highlight::after {
 }
 
 /* Start of Portfolio */
-.portfolio .card-body p {
-    font-size: .8125rem;
-}
-
 .portfolio .portfolio-img img {
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
@@ -233,15 +191,9 @@ p.highlight::after {
 }
 
 .portfolio .portfolio-btn i {
-    position: relative;
     box-shadow: var(--primary-color) 0px 0px 0px 2px;
     width: 2.1875rem;
     height: 2.1875rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -273,15 +225,9 @@ p.highlight::after {
     max-width: 35rem;
 }
 
-.testimonail #carouselExampleSlidesOnly button {
+.testimonail #carouselExampleSlidesOnly .carousel-indicators button.circle {
     width: .625rem;
-    height: .75rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    border: none;
+    height: .625rem;
 }
 
 /* End of Testimonail */
@@ -318,7 +264,6 @@ p.highlight::after {
     -moz-transition: all 0.3 ease-in-out;
     -ms-transition: all 0.3 ease-in-out;
     -o-transition: all 0.3 ease-in-out;
-    border: transparent 5px solid;
     background-color: var(--primary-color);
 }
 
@@ -330,13 +275,8 @@ p.highlight::after {
 .contact .contact-box .contact-styled-icons i {
     position: relative;
     box-shadow: var(--primary-color) 0 0 0 .1875rem;
-    border-radius: 50%;
     width: 2.5rem;
     height: 2.5rem;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     -moz-transition: all 0.5s ease-in-out;
@@ -372,15 +312,8 @@ footer {
 
 /* Start of Back Button */
 aside a i {
-    font-size: 2.5rem;
-    background-color: white;
-    width: 2.5125rem;
-    height: 2.4375rem;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
+    width: 1.5625rem;
+    height: 1.5625rem;
     transition: color 1s ease;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;
