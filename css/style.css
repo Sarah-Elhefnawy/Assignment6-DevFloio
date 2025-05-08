@@ -1,5 +1,8 @@
 :root {
     --primary-color: #0078FF;
+    --secondary-color: #3293FF;
+    --box-shadow: rgba(129, 186, 251, 0.583);
+    --linear-gradient: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%);
 }
 
 h2::after {
@@ -8,9 +11,15 @@ h2::after {
     left: 0;
     right: 0;
     width: 6rem;
-    bottom: -8px;
+    bottom: -0.5rem;
     background-color: var(--primary-color);
-    height: 2.5px;
+    height: .1563rem;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.6rem;
 }
 
 p.highlight {
@@ -23,7 +32,7 @@ p.highlight::after {
     top: 150%;
     left: 50%;
     right: 0;
-    height: 5px;
+    height: .3125rem;
     width: 3rem;
     background-color: var(--primary-color);
     transform: translate(-50%);
@@ -47,7 +56,7 @@ p.highlight::after {
 .navbar ul li a::after {
     content: "";
     position: absolute;
-    left: 5px;
+    left: .3125rem;
     visibility: hidden;
     right: 100%;
     bottom: 0;
@@ -61,16 +70,16 @@ p.highlight::after {
 }
 
 .navbar ul li a:hover::after {
-    right: 10px;
+    right: .625rem;
     visibility: visible;
 }
 
 .navbar li.dropdown ul.nav-drop-active {
     display: block;
     position: absolute;
-    left: 13px;
+    left: .8125rem;
     top: 300%;
-    padding: 10px 0;
+    padding: .625rem 0;
     z-index: 99;
     opacity: 0;
     visibility: hidden;
@@ -115,7 +124,7 @@ p.highlight::after {
 }
 
 .header span.typed-cursor {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 800;
 }
 
@@ -123,24 +132,19 @@ p.highlight::after {
 
 /* Start of About */
 .about figure {
-    width: 150px;
+    width: 9.375rem;
 }
 
 /* End of About */
 
 /* Start of Services */
-h3 {
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 57.6px;
-}
 
 .services .inner-services i {
     position: relative;
-    box-shadow: var(--primary-color) 0px 0px 0px 10px;
+    box-shadow: var(--primary-color) 0px 0px 0px .625rem;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -165,29 +169,25 @@ h3 {
 }
 
 .services .inner-services:hover i {
-    box-shadow: rgba(129, 186, 251, 0.583) 0px 0px 0px 10px;
+    box-shadow: var(--box-shadow) 0 0 0 .625rem;
     background-color: var(--primary-color);
 }
 
 /* End of Services */
 .numbers {
-    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/counters-bg.jpg);
+    background-image: var(--linear-gradient), url(./../images/counters-bg.jpg);
     background-position: center;
     background-size: cover;
-    padding: 120px 0;
-}
-
-.inner-numbers {
+    padding: 7.5rem 0;
     color: #CDE1F8;
 }
 
-.inner-numbers .num i {
+.numbers .num i {
     position: relative;
-    /*border: #0078FF 8px solid;*/
-    box-shadow: #CDE1F8 0px 0px 0px 10px;
+    box-shadow: #CDE1F8 0 0 0 .625rem;
     border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -199,7 +199,7 @@ h3 {
     -o-transition: all 0.5s ease-in-out;
 }
 
-.inner-numbers .num i::before {
+.numbers .num i::before {
     position: absolute;
     top: 50%;
     left: 0;
@@ -213,7 +213,7 @@ h3 {
 
 /* Start of Portfolio */
 .portfolio .card-body p {
-    font-size: 13px;
+    font-size: .8125rem;
 }
 
 .portfolio .portfolio-img img {
@@ -235,8 +235,8 @@ h3 {
 .portfolio .portfolio-btn i {
     position: relative;
     box-shadow: var(--primary-color) 0px 0px 0px 2px;
-    width: 35px;
-    height: 35px;
+    width: 2.1875rem;
+    height: 2.1875rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -264,7 +264,7 @@ h3 {
 
 /* Start of Testimonail */
 .testimonail {
-    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/overlay-bg.jpg);
+    background-image: var(--linear-gradient), url(./../images/overlay-bg.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -274,19 +274,14 @@ h3 {
 }
 
 .testimonail #carouselExampleSlidesOnly button {
-    width: 10px;
-    height: 12px;
+    width: .625rem;
+    height: .75rem;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
-    background-color: rgba(255, 255, 255, 0.678);
     border: none;
-}
-
-.testimonail #carouselExampleSlidesOnly button.active {
-    background-color: white;
 }
 
 /* End of Testimonail */
@@ -312,10 +307,9 @@ h3 {
 
 /* Start of Contact */
 .contact {
-    background-image: linear-gradient(rgba(0, 120, 255, 0.7)0% 100%), url(./../images/overlay-bg.jpg);
+    background-image: var(--linear-gradient), url(./../images/overlay-bg.jpg);
     background-position: center;
     background-size: cover;
-    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
 
 .contact .contact-btn {
@@ -329,16 +323,16 @@ h3 {
 }
 
 .contact .contact-btn:hover {
-    background-color: rgba(0, 120, 255, 0.7);
-    border: #CDE1F8 5px solid;
+    background-color: var(--secondary-color);
+    box-shadow: var(--box-shadow) 0 0 0 .3125rem;
 }
 
 .contact .contact-box .contact-styled-icons i {
     position: relative;
-    box-shadow: var(--primary-color) 0px 0px 0px 3px;
+    box-shadow: var(--primary-color) 0 0 0 .1875rem;
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
@@ -363,7 +357,7 @@ h3 {
 }
 
 .contact .contact-box i:hover {
-    box-shadow: rgba(129, 186, 251, 0.583) 0px 0px 0px 10px;
+    box-shadow: var(--box-shadow) 0 0 0 .625rem;
     background-color: var(--primary-color);
 }
 
@@ -375,3 +369,26 @@ footer {
 }
 
 /* End of Footer */
+
+/* Start of Back Button */
+aside a i {
+    font-size: 2.5rem;
+    background-color: white;
+    width: 2.5125rem;
+    height: 2.4375rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: color 1s ease;
+    -webkit-transition: color 1s ease;
+    -moz-transition: color 1s ease;
+    -ms-transition: color 1s ease;
+    -o-transition: color 1s ease;
+}
+
+aside a i:hover {
+    color: var(--secondary-color);
+}
+/* End of Back Button */
