@@ -37,10 +37,10 @@ p.highlight::after {
     background-color: rgba(4, 4, 4, 0.92);
 }
 
-.navbar ul.navbar-nav li.nav-item::after {
+ul li a::after {
     content: "";
     position: absolute;
-    left: 1.5625rem;
+    left: .3125rem;
     visibility: hidden;
     right: 100%;
     bottom: 0;
@@ -53,15 +53,23 @@ p.highlight::after {
     -o-transition: all 0.3s ease-in-out;
 }
 
-.navbar ul.navbar-nav li.nav-item:hover::after {
+ul li a:hover::after {
     right: .625rem;
     visibility: visible;
 }
 
-.navbar li.dropdown ul.nav-drop-active {
-    left: 1.5rem;
+li.dropdown ul.nav-drop-active {
+    display: block;
+    position: absolute;
+    left: .8125rem;
     top: 300%;
+    padding: .625rem 0;
+    z-index: 99;
     opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
     transition: 0.3s all ease;
     -webkit-transition: 0.3s all ease;
     -moz-transition: 0.3s all ease;
@@ -69,12 +77,18 @@ p.highlight::after {
     -o-transition: 0.3s all ease;
 }
 
-.navbar li.dropdown:hover>ul.nav-drop-active {
+li.dropdown:hover>ul.nav-drop-active {
     opacity: 1;
     top: 120%;
+    visibility: visible;
 }
 
-.navbar li.dropdown ul.nav-drop-active li.nav-a-active a:hover {
+.navbar li.dropdown ul.nav-drop-active li.nav-a-active a {
+    color: black;
+}
+
+.navbar li.dropdown ul.nav-drop-active li.nav-a-active a:hover,
+.modal .modal-body li a:hover {
     color: var(--primary-color);
     background-color: transparent;
     transition: color 0.6s ease;
@@ -146,11 +160,11 @@ p.highlight::after {
     background-image: var(--linear-gradient), url(./../images/counters-bg.jpg);
     background-position: center;
     background-size: cover;
-    padding: 7.5rem 0;
+    padding: 8rem 0;
     color: #CDE1F8;
 }
 
-.numbers .num i {
+.numbers .inner-num i {
     box-shadow: #CDE1F8 0 0 0 .625rem;
     width: 3.75rem;
     height: 3.75rem;
@@ -161,7 +175,7 @@ p.highlight::after {
     -o-transition: all 0.5s ease-in-out;
 }
 
-.numbers .num i::before {
+.numbers .inner-num i::before {
     position: absolute;
     top: 50%;
     left: 0;
@@ -237,6 +251,23 @@ p.highlight::after {
     width: 12%;
 }
 
+.blog .card span.badge {
+    position: relative;
+    top: -1.875rem;
+}
+
+.blog .card a.card-title {
+    transition: color 0.5s ease;
+    -webkit-transition: color 0.5s ease;
+    -moz-transition: color 0.5s ease;
+    -ms-transition: color 0.5s ease;
+    -o-transition: color 0.5s ease;
+}
+
+.blog .card a.card-title:hover {
+    color: var(--primary-color);
+}
+
 .blog .card .card-footer a span {
     transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
@@ -296,7 +327,7 @@ p.highlight::after {
     -o-transform: translate(-50%, -50%);
 }
 
-.contact .contact-box i:hover {
+.contact .contact-box .contact-styled-icons i:hover {
     box-shadow: var(--box-shadow) 0 0 0 .625rem;
     background-color: var(--primary-color);
 }
@@ -311,9 +342,8 @@ footer {
 /* End of Footer */
 
 /* Start of Back Button */
-aside a i {
-    width: 1.5625rem;
-    height: 1.5625rem;
+aside a i::before {
+    content: "";
     transition: color 1s ease;
     -webkit-transition: color 1s ease;
     -moz-transition: color 1s ease;

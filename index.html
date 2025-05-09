@@ -13,50 +13,109 @@
 
 <body>
     <!-- Start of Navbar -->
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fs-6 fw-medium">
-        <div class="container d-flex justify-content-between align-items-center">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark fs-6 fw-medium" data-bs-theme="dark">
+        <div class="container">
             <a class="navbar-brand fs-2" href="#">DevFolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto text-uppercase">
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#">Home</a>
+                        <a class="nav-link position-relative text-white" href="#">Home</a>
                     </li>
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#about">About</a>
+                        <a class="nav-link position-relative text-white" href="#about">About</a>
                     </li>
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#services">Services</a>
+                        <a class="nav-link position-relative text-white" href="#services">Services</a>
                     </li>
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#portfolio">Work</a>
+                        <a class="nav-link position-relative text-white" href="#portfolio">Work</a>
                     </li>
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#blog">Blog</a>
+                        <a class="nav-link position-relative text-white" href="#blog">Blog</a>
                     </li>
-                    <li class="nav-item fw-medium ps-3 dropdown">
-                        <a class="nav-link text-white" href="#" role="button" aria-expanded="false">
-                            drop down
-                            <i class="fa-solid fa-caret-down"></i>
+                    <li class="nav-item fw-medium dropdown">
+                        <a class="nav-link position-relative text-white" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Drop down
                         </a>
-                        <ul class="dropdown-menu nav-drop-active z-3 d-block position-absolute overflow-hidden bg-white shadow-lg rounded-0">
-                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 1</a></li>
-                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 2</a></li>
-                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 3</a></li>
-                            <li class="nav-a-active"><a class="dropdown-item" href="#">Drop down 4</a></li>
+                        <ul class="dropdown-menu nav-drop-active border-0" data-bs-theme="bg-light">
+                            <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop down
+                                    1</a>
+                            </li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop down
+                                    2</a>
+                            </li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop down
+                                    3</a>
+                            </li>
+                            <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop down
+                                    4</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item fw-medium ps-3">
-                        <a class="nav-link active" href="#contact">Contact</a>
+                        <a class="nav-link position-relative text-white" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
     </nav>
+    <!-- Modal for mobile view -->
+    <aside class="modal fade" id="navbarModal" tabindex="-1" aria-labelledby="navbarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" data-bs-theme="light">
+                <div class="modal-header border-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+                        data-bs-theme="dark"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="navbar-nav text-uppercase">
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#" data-bs-dismiss="modal">Home</a>
+                        </li>
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#about" data-bs-dismiss="modal">About</a>
+                        </li>
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#services" data-bs-dismiss="modal">Services</a>
+                        </li>
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#portfolio" data-bs-dismiss="modal">Work</a>
+                        </li>
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#blog" data-bs-dismiss="modal">Blog</a>
+                        </li>
+                        <li class="nav-item fw-medium my-2 dropdown">
+                            <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Drop down
+                            </a>
+                            <ul class="dropdown-menu nav-drop-active border-0" data-bs-theme="bg-light">
+                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                        down 1</a>
+                                </li>
+                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                        down 2</a>
+                                </li>
+                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                        down 3</a>
+                                </li>
+                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                        down 4</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item fw-medium my-2">
+                            <a class="nav-link position-relative" href="#contact" data-bs-dismiss="modal">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </aside>
     <!-- End of Navbar -->
 
     <!-- Start of Header -->
@@ -126,9 +185,9 @@
                         </ul>
                     </div>
                     <div class="col-md-6">
-                        <div>
+                        <figcaption>
                             <h2 class="fs-1 fw-medium position-relative">About me</h2>
-                            <figcaption class="mt-5">
+                            <article class="mt-5">
                                 <p>
                                     Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur arcu
                                     erat,
@@ -153,8 +212,8 @@
                                     nibh
                                     pulvinar a.
                                 </p>
-                            </figcaption>
-                        </div>
+                            </article>
+                        </figcaption>
                     </div>
                 </div>
             </div>
@@ -226,27 +285,34 @@
     <!-- Start of Numbers -->
     <section class="numbers">
         <div class="container">
-            <div
-                class="inner-numbers d-flex flex-column flex-md-row text-center justify-content-around align-items-center">
-                <div class="num my-2">
-                    <i class="fa-solid fs-2 position-relative rounded-circle fa-check"></i>
-                    <p class="fs-1 lh-lg mb-0">450</p>
-                    <span class="text-uppercase fs-6">works completed</span>
+            <div class="row d-flex flex-column flex-md-row text-center justify-content-around align-items-center">
+                <div class="col-sm-3">
+                    <div class="inner-num">
+                        <i class="fa-solid fs-2 position-relative rounded-circle fa-check"></i>
+                        <p class="fs-1 lh-lg mb-0">450</p>
+                        <span class="text-uppercase fs-6">works completed</span>
+                    </div>
                 </div>
-                <div class="num my-2">
-                    <i class="fa-solid fs-2 position-relative rounded-circle fa-book"></i>
-                    <p class="fs-1 lh-lg mb-0">25</p>
-                    <span class="text-uppercase fs-6">years of experience</span>
+                <div class="col-sm-3">
+                    <div class="inner-num">
+                        <i class="fa-solid fs-2 position-relative rounded-circle fa-book"></i>
+                        <p class="fs-1 lh-lg mb-0">25</p>
+                        <span class="text-uppercase fs-6">years of experience</span>
+                    </div>
                 </div>
-                <div class="num my-2">
-                    <i class="fa-solid fs-2 position-relative rounded-circle fa-users"></i>
-                    <p class="fs-1 lh-lg mb-0">550</p>
-                    <span class="text-uppercase fs-6">total clients</span>
+                <div class="col-sm-3">
+                    <div class="inner-num">
+                        <i class="fa-solid fs-2 position-relative rounded-circle fa-users"></i>
+                        <p class="fs-1 lh-lg mb-0">550</p>
+                        <span class="text-uppercase fs-6">total clients</span>
+                    </div>
                 </div>
-                <div class="num my-2">
-                    <i class="fa-solid fs-2 position-relative rounded-circle fa-award"></i>
-                    <p class="fs-1 lh-lg mb-0">48</p>
-                    <span class="text-uppercase fs-6">awards won</span>
+                <div class="col-sm-3">
+                    <div class="inner-num">
+                        <i class="fa-solid fs-2 position-relative rounded-circle fa-award"></i>
+                        <p class="fs-1 lh-lg mb-0">48</p>
+                        <span class="text-uppercase fs-6">awards won</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -264,23 +330,23 @@
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-1.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work tablet image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-row justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-1.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work tablet image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start">
+                        <figcaption class="card-body text-start">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Lorem impsum dolor</h5>
@@ -295,29 +361,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-2.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work chair image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-2.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work chair image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start">
+                        <figcaption class="card-body text-start">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Loreda Cuno Nere</h5>
@@ -332,29 +398,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-3.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work desk image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-3.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work desk image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start">
+                        <figcaption class="card-body text-start">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Mavrito Lana Dere</h5>
@@ -369,29 +435,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal4">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-4.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work tablet image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-4.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work tablet image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start">
+                        <figcaption class="card-body text-start">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Bindo Laro Cado</h5>
@@ -406,29 +472,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal5">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-5.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work tablet image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal5" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-5.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work tablet image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start">
+                        <figcaption class="card-body text-start">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Studio Lena Mado
@@ -444,29 +510,29 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4 px-2">
                     <div class="card rounded-0 border-0 shadow-sm">
                         <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal6">
-                            <div class="portfolio-img overflow-hidden">
+                            <figure class="portfolio-img overflow-hidden">
                                 <img src="./images/work-6.jpg" class="w-100 card-img-top rounded-0"
                                     alt="Work tablet image">
-                            </div>
+                            </figure>
                         </a>
                         <div class="modal fade" id="exampleModal6" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog modal-fullscreen">
-                                <div class="modal-content d-flex flex-column justify-content-center align-items-center">
-                                    <button type="button" class="btn-close position-absolute top-0 end-0 m-5"
+                                <div class="modal-content bg-dark bg-opacity-50 d-flex flex-column justify-content-center align-items-center">
+                                    <button type="button" class="btn-close bg-primary position-absolute top-0 end-0 m-5"
                                         data-bs-dismiss="modal" aria-label="Close"></button>
                                     <img src="./images/work-6.jpg" class="w-50 card-img-top rounded-0"
                                         alt="Work tablet image">
                                 </div>
                             </div>
                         </div>
-                        <div class="card-body text-start py-3">
+                        <figcaption class="card-body text-start py-3">
                             <div class="row">
                                 <div class="col-8 ps-1 pe-0">
                                     <h5 class="card-title text-capitalize pt-3">Studio Big Bang</h5>
@@ -481,7 +547,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </figcaption>
                     </div>
                 </div>
             </div>
@@ -495,27 +561,34 @@
             <div class="testimonial-content">
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner pb-5">
-                        <div class="carousel-item active">
+                        <figure class="carousel-item active">
                             <img src="./images/testimonial-2.jpg" class="d-block rounded-circle shadow-sm m-auto" />
-                            <span class="text-uppercase fs-4 fw-medium lh-lg">Xavi Alonso</span>
-                            <p class="testimonial-p fs-5 fw-light mt-2 lh-lg m-auto">Curabitur arcu erat, accumsan id
-                                imperdiet et, porttitor at sem. Lorem ipsum dolor sit
-                                amet,consectetur adipiscing elit.
-                            </p>
-                        </div>
-                        <div class="carousel-item">
+                            <figcaption>
+                                <span class="text-uppercase fs-4 fw-medium lh-lg">Xavi Alonso</span>
+                                <p class="testimonial-p fs-5 fw-light mt-2 lh-lg m-auto">Curabitur arcu erat, accumsan
+                                    id
+                                    imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                    amet,consectetur adipiscing elit.
+                                </p>
+                            </figcaption>
+                        </figure>
+                        <figure class="carousel-item">
                             <img src="./images/testimonial-4.jpeg" class="d-block rounded-circle shadow-sm m-auto"
                                 alt="Designer's image">
-                            <span class="text-uppercase fs-4 fw-medium lh-lg">Marta Socrate</span>
-                            <p class="testimonial-p fs-5 fw-light mt-2 lh-lg m-auto">Curabitur arcu erat, accumsan id
-                                imperdiet et, porttitor at sem. Lorem ipsum dolor sit
-                                amet,consectetur adipiscing elit.
-                            </p>
-                        </div>
+                            <figcaption>
+                                <span class="text-uppercase fs-4 fw-medium lh-lg">Marta Socrate</span>
+                                <p class="testimonial-p fs-5 fw-light mt-2 lh-lg m-auto">Curabitur arcu erat, accumsan
+                                    id
+                                    imperdiet et, porttitor at sem. Lorem ipsum dolor sit
+                                    amet,consectetur adipiscing elit.
+                                </p>
+                            </figcaption>
+                        </figure>
                     </div>
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0"
-                            class="active circle rounded-circle border-0" aria-current="true" aria-label="Slide 1"></button>
+                            class="active circle rounded-circle border-0" aria-current="true"
+                            aria-label="Slide 1"></button>
                         <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1"
                             class="circle rounded-circle border-0" aria-label="Slide 2"></button>
                     </div>
@@ -534,83 +607,99 @@
             </p>
             <div class="row row-cols-1 row-cols-md-3 my-5">
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <a href="#">
-                            <img src="./images/post-1.jpg" class="card-img-top rounded-0" alt="Travel photo">
+                            <figure>
+                                <img src="./images/post-1.jpg" class="card-img-top rounded-0" alt="Travel photo">
+                            </figure>
                         </a>
-                        <span
-                            class="badge text-bg-primary text-uppercase text-white z-3 w-25 position-relative start-50 translate-middle p-2 fw-medium">travel</span>
-                        <div class="card-body text-start pt-0 pb-4">
-                            <h5 class="card-title">See more ideas about Travel</h5>
-                            <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum id
-                                orci porta dapibus.
-                                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                        </div>
-                        <div
-                            class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
-                            <a href="#" class="text-decoration-none text-black">
-                                <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
-                                    alt="Developer's image">
-                                <span class="float-start fs-6">Morgan Freeman</span>
-                            </a>
-                            <small class="text-body-secondary float-end fs-6 w-25">
-                                <i class="fa-regular fa-clock"></i>
-                                10 min</small>
-                        </div>
+                        <figcaption>
+                            <span class="badge text-bg-primary text-uppercase text-white p-2 fw-medium">travel</span>
+                            <figcaption class="card-body text-start pt-0 pb-4">
+                                <a href="#" class="card-title text-decoration-none fs-5 fw-medium">See more ideas about
+                                    Travel</a>
+                                <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum
+                                    id
+                                    orci porta dapibus.
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                            </figcaption>
+                            <div
+                                class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
+                                        alt="Developer's image">
+                                    <span class="float-start fs-6">Morgan Freeman</span>
+                                </a>
+                                <small class="text-body-secondary float-end fs-6 w-25">
+                                    <i class="fa-regular fa-clock"></i>
+                                    10 min</small>
+                            </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <a href="#">
-                            <img src="./images/post-2.jpg" class="card-img-top rounded-0" alt="Salad photo">
+                            <figure>
+                                <img src="./images/post-2.jpg" class="card-img-top rounded-0" alt="Salad photo">
+                            </figure>
                         </a>
-                        <span
-                            class="badge text-bg-primary text-uppercase text-white z-3 w-25 position-relative start-50 translate-middle p-2 fw-medium">web
-                            design</span>
-                        <div class="card-body text-start pt-0 pb-4">
-                            <h5 class="card-title">See more ideas about Travel</h5>
-                            <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum id
-                                orci porta dapibus.
-                                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                        </div>
-                        <div
-                            class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
-                            <a href="#" class="text-decoration-none text-black">
-                                <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
-                                    alt="Developer's image">
-                                <span class="float-start fs-6">Morgan Freeman</span>
-                            </a>
-                            <small class="text-body-secondary float-end fs-6 w-25">
-                                <i class="fa-regular fa-clock"></i>
-                                10 min</small>
-                        </div>
+                        <figcaption>
+                            <span class="badge text-bg-primary text-uppercase text-white w-25 p-2 fw-medium">web
+                                design</span>
+                            <div class="card-body text-start pt-0 pb-4">
+                                <a href="#" class="card-title text-decoration-none fs-5 fw-medium">See more ideas about
+                                    Travel</a>
+                                <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum
+                                    id
+                                    orci porta dapibus.
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                            </div>
+                            <div
+                                class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
+                                        alt="Developer's image">
+                                    <span class="float-start fs-6">Morgan Freeman</span>
+                                </a>
+                                <small class="text-body-secondary float-end fs-6 w-25">
+                                    <i class="fa-regular fa-clock"></i>
+                                    10 min</small>
+                            </div>
+                        </figcaption>
                     </div>
                 </div>
                 <div class="col">
-                    <div class="card h-100 shadow-sm">
+                    <div class="card shadow-sm">
                         <a href="#">
-                            <img src="./images/post-3.jpg" class="card-img-top rounded-0" alt="Work environment photo">
+                            <figure>
+                                <img src="./images/post-3.jpg" class="card-img-top rounded-0"
+                                    alt="Work environment photo">
+                            </figure>
                         </a>
-                        <span
-                            class="badge text-bg-primary text-uppercase text-white z-3 w-25 position-relative start-50 translate-middle p-2 fw-medium">web
-                            design</span>
-                        <div class="card-body text-start pt-0 pb-4">
-                            <h5 class="card-title">See more ideas about Travel</h5>
-                            <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum id
-                                orci porta dapibus.
-                                Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
-                        </div>
-                        <div
-                            class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
-                            <a href="#" class="text-decoration-none text-black">
-                                <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
-                                    alt="Developer's image">
-                                <span class="float-start fs-6">Morgan Freeman</span>
-                            </a>
-                            <small class="text-body-secondary float-end fs-6 w-25">
-                                <i class="fa-regular fa-clock"></i>
-                                10 min</small>
-                        </div>
+                        <figcaption class="d-flex flex-column align-items-center">
+                            <span class="badge text-bg-primary text-uppercase text-white w-25 p-2 fw-medium">web
+                                design</span>
+                            <div class="card-body text-start pt-0 pb-4">
+                                <a href="#" class="card-title text-decoration-none fs-5 fw-medium">See more ideas about
+                                    Travel</a>
+                                <p class="card-text text-body-secondary">Proin eget tortor risus. Pellentesque in ipsum
+                                    id
+                                    orci porta dapibus.
+                                    Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.</p>
+                            </div>
+                            <div
+                                class="card-footer rounded-top-0 rounded-bottom-1 d-flex align-items-center justify-content-between">
+                                <a href="#" class="text-decoration-none text-black">
+                                    <img src="./images/testimonial-2.jpg" class="float-start rounded-circle me-2"
+                                        alt="Developer's image">
+                                    <span class="float-start fs-6">Morgan Freeman</span>
+                                </a>
+                                <small class="text-body-secondary float-end fs-6 w-25">
+                                    <i class="fa-regular fa-clock"></i>
+                                    10 min</small>
+                            </div>
+                        </figcaption>
                     </div>
                 </div>
             </div>
@@ -633,18 +722,17 @@
                                     id="validationDefault02" required placeholder="Your Email">
                                 <input type="text" class="form-control form-control-lg rounded-0"
                                     id="validationDefault03" required placeholder="Subject">
-                                <textarea class="form-control form-control-lg rounded-0"
-                                id="validationDefault01" required rows="3" placeholder="Message"></textarea>
+                                <textarea class="form-control form-control-lg rounded-0" id="validationDefault01"
+                                    required rows="3" placeholder="Message"></textarea>
                                 <div class="col-12 d-flex justify-content-center align-items-center my-4">
-                                    <button type="submit"
-                                        class="contact-btn btn text-white btn-lg rounded-5 px-4">Send
+                                    <button type="submit" class="contact-btn btn text-white btn-lg rounded-5 px-4">Send
                                         Message</button>
                                 </div>
                             </form>
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                        <div>
+                        <article>
                             <h2 class="fs-2 fw-medium position-relative">Get in Touch</h2>
                             <p class="text-body-secondary pt-4 pb-2 fs-5 fw-lighter">Lorem ipsum dolor sit amet
                                 consectetur
@@ -672,7 +760,7 @@
                                 <li class="pe-3"><i class="fa-brands fa-twitter fs-3 rounded-circle"></i></li>
                                 <li class="pe-3"><i class="fa-brands fa-linkedin fs-3 rounded-circle"></i></li>
                             </ul>
-                        </div>
+                        </article>
                     </div>
                 </div>
             </div>
@@ -692,7 +780,7 @@
     <!-- Start of Back Button -->
     <aside class="position-fixed end-0 bottom-0 z-3 m-3">
         <a href="#">
-            <i class="fa-solid fa-circle-chevron-up fs-1 rounded-circle bg-white"></i>
+            <i class="fa-solid fa-circle-chevron-up fs-2 rounded-circle bg-white"></i>
         </a>
     </aside>
     <!-- End of Back Button -->
