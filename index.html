@@ -61,6 +61,7 @@
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="modal" data-bs-target="#navbarModal">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
         </div>
     </nav>
     <!-- Modal for mobile view -->
@@ -74,19 +75,19 @@
                 <div class="modal-body">
                     <ul class="navbar-nav text-uppercase">
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#" data-bs-dismiss="modal">Home</a>
+                            <a id="navId" class="nav-link position-relative" href="#">Home</a>
                         </li>
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#about" data-bs-dismiss="modal">About</a>
+                            <a id="navId" class="nav-link position-relative" href="#about">About</a>
                         </li>
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#services" data-bs-dismiss="modal">Services</a>
+                            <a id="navId" class="nav-link position-relative" href="#services">Services</a>
                         </li>
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#portfolio" data-bs-dismiss="modal">Work</a>
+                            <a id="navId" class="nav-link position-relative" href="#portfolio">Work</a>
                         </li>
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#blog" data-bs-dismiss="modal">Blog</a>
+                            <a id="navId" class="nav-link position-relative" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item fw-medium my-2 dropdown">
                             <a class="nav-link position-relative" href="#" role="button" data-bs-toggle="dropdown"
@@ -94,22 +95,22 @@
                                 Drop down
                             </a>
                             <ul class="dropdown-menu nav-drop-active border-0" data-bs-theme="bg-light">
-                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                <li class="nav-a-active"><a id="navId" class="dropdown-item" href="#">Drop
                                         down 1</a>
                                 </li>
-                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                <li class="nav-a-active"><a id="navId" class="dropdown-item" href="#">Drop
                                         down 2</a>
                                 </li>
-                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                <li class="nav-a-active"><a id="navId" class="dropdown-item" href="#">Drop
                                         down 3</a>
                                 </li>
-                                <li class="nav-a-active"><a class="dropdown-item" href="#" data-bs-dismiss="modal">Drop
+                                <li class="nav-a-active"><a id="navId" class="dropdown-item" href="#">Drop
                                         down 4</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item fw-medium my-2">
-                            <a class="nav-link position-relative" href="#contact" data-bs-dismiss="modal">Contact</a>
+                            <a id="navId" class="nav-link position-relative" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -230,7 +231,7 @@
             </p>
             <div class="row mt-5 g-4">
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-solid fa-suitcase position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">web design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -238,7 +239,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-solid fa-list-check position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">web development</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -246,7 +247,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-solid fa-chart-simple position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">Photography</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -254,7 +255,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-regular fa-sun position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">Graphic Design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -262,7 +263,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-solid fa-person-rays position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">Marketing Services</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -270,7 +271,7 @@
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-4">
-                    <div class="inner-services shadow-sm p-3 mb-4 bg-white rounded-4">
+                    <div class="inner-services shadow-sm py-5 mb-4 bg-white rounded-4">
                         <i class="fa-solid fa-suitcase fs-1 position-relative rounded-circle fs-1"></i>
                         <h4 class="text-uppercase mt-3">web design</h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci eaque autem fugiat!
@@ -372,12 +373,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -447,12 +450,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample2" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample2" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -522,12 +527,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample3" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample3" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -597,12 +604,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample4" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample4" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -672,12 +681,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample5" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample5" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -748,12 +759,14 @@
                                         </div>
                                         <button class="carousel-control-prev" type="button"
                                             data-bs-target="#carouselExample6" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-prev-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Previous</span>
                                         </button>
                                         <button class="carousel-control-next" type="button"
                                             data-bs-target="#carouselExample6" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon bg-primary rounded-circle" aria-hidden="true"></span>
+                                            <span class="carousel-control-next-icon bg-primary rounded-circle"
+                                                aria-hidden="true"></span>
                                             <span class="visually-hidden">Next</span>
                                         </button>
                                     </div>
@@ -1006,9 +1019,9 @@
     <!-- End of Footer -->
 
     <!-- Start of Back Button -->
-    <aside class="position-fixed end-0 bottom-0 z-3 m-3">
+    <aside class="position-fixed end-0 bottom-0 z-3 m-3 scroll-to-top">
         <a href="#">
-            <i class="fa-solid fa-circle-chevron-up fs-2 rounded-circle bg-white"></i>
+            <i id="anchor" class="fa-solid fa-circle-chevron-up fs-2 rounded-circle bg-white"></i>
         </a>
     </aside>
     <!-- End of Back Button -->

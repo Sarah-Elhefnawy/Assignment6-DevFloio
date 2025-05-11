@@ -342,6 +342,24 @@ footer {
 /* End of Footer */
 
 /* Start of Back Button */
+.scroll-to-top {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+.scroll-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
 aside a i::before {
     content: "";
     transition: color 1s ease;
